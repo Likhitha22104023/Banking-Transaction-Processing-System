@@ -3,7 +3,7 @@ CXX = g++
 
 CFLAGS = -g -Wall -Wextra -std=c11 -pthread
 CXXFLAGS = -g -Wall -Wextra -std=c++17 -pthread
-LDFLAGS = -pthread
+LDFLAGS = -pthread --coverage
 
 TARGET = banking_system
 SOURCES = main.c account.c transaction.c sync.c secalloc.c security.c logger.c report.c
